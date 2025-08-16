@@ -21,7 +21,22 @@ Data cleansing csv file using pandas:
    df = pd.read_csv('CO2 Emission Country.csv')
    ```
 5. Checking info of data frame
-6. Remove unused string from data
-7. Correcting data type -- convert object to numeric
-8. Checking final result data cleansing
-9. Save new csv file
+   ```Jupyter Notebook
+   df.info()
+   ```
+7. Remove unused string from data
+   ```Jupyter Notebook
+   df['% of global total'] = df['% of global total'].str.replace('%', '', regex=False)
+   ```
+9. Correcting data type -- convert object to numeric
+    ```Jupyter Notebook
+   df['% of global total'] = pd.to_numeric(df['% of global total'], errors='raise')
+   ```
+11. Checking final result data cleansing
+    ```Jupyter Notebook
+    df.info()
+    ```
+13. Save new csv file
+    ```Jupyter Notebook
+    df.to_csv('New CO2 Emissions.csv', index=False)
+    ```
