@@ -1,4 +1,7 @@
 # jupyter_data_cleansing
+# *Overview*
+# *Prerequisites*
+# *Project Flow*
 Data cleansing csv file using pandas:
 1. Import necessary python3 lib -- pandas
 2. Extract csv into pandas data frame
