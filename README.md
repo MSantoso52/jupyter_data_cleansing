@@ -13,30 +13,30 @@ To follow along this learning need to be available your in system:
 # *Project Flow*
 Data cleansing csv file using pandas:
 1. Import necessary python3 lib -- pandas
-   ```Jupyter Notebook
+   ```python3
    import pandas as pd
    ```
 3. Extract csv into pandas data frame
-   ```Jupyter Notebook
+   ```python3
    df = pd.read_csv('CO2 Emission Country.csv')
    ```
 5. Checking info of data frame
-   ```Jupyter Notebook
+   ```python3
    df.info()
    ```
 7. Remove unused string from data
-   ```Jupyter Notebook
+   ```python3
    df['% of global total'] = df['% of global total'].str.replace('%', '', regex=False)
    ```
 9. Correcting data type -- convert object to numeric
-    ```Jupyter Notebook
+    ```python3
    df['% of global total'] = pd.to_numeric(df['% of global total'], errors='raise')
    ```
 11. Checking final result data cleansing
-    ```Jupyter Notebook
+    ```python3
     df.info()
     ```
 13. Save new csv file
-    ```Jupyter Notebook
+    ```python3
     df.to_csv('New CO2 Emissions.csv', index=False)
     ```
