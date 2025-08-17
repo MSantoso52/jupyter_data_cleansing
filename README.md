@@ -5,7 +5,7 @@ Project repo to demonstrate Data Cleansing in Python, using CSV file as object b
 To follow along this learning need to be available your in system:
 - Jupyter Notebook & pandas
   ```bash
-  pip install juypiter-notebook
+  pip install juypiter
   ```
   ```bash
   pip install pandas
