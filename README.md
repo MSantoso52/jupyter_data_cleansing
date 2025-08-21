@@ -1,8 +1,9 @@
 # jupyter_data_cleansing
+![Screenshot of a project interface](csv_cleansing.jpg)
 # *Overview*
 Project repo to demonstrate Data Cleansing in Python, using CSV file as object by correcting format, removing unecessary chars, standardize format data. All process done in Jupyter Notebook using pandas librarry.
 # *Prerequisites*
-To follow along this learning need to be available your in system:
+To follow along this project need to be available your in system:
 - Jupyter Notebook & pandas
   ```bash
   pip install juypiter
